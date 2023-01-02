@@ -13,7 +13,7 @@ const Home = () => {
   async function callApi(e) {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/api/uploadUrl/", {
+      .post("https://rajdeep345.pythonanywhere.com/api/uploadUrl/", {
         // urlName: urlName,
         url : url
       })

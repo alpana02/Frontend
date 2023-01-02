@@ -11,7 +11,7 @@ const Summary = () => {
   async function getSummary(update) {
     axios
       .get(
-        "http://localhost:8000/api/summary/" +
+        "https://rajdeep345.pythonanywhere.com/api/summary/" +
           String(localStorage.getItem("objectId"))
       )
       .then((resp) => {
@@ -31,7 +31,7 @@ const Summary = () => {
   async function getAllSentences() {
     axios
       .get(
-        "http://localhost:8000/api/getAllSentences/" +
+        "https://rajdeep345.pythonanywhere.com/api/getAllSentences/" +
           String(localStorage.getItem("objectId"))
       )
       .then((resp) => {
@@ -71,7 +71,7 @@ const Summary = () => {
       setSelectedCount((prev) => current_count);
       axios
         .get(
-          "http://localhost:8000/api/updateSelectedSentence/" +
+          "https://rajdeep345.pythonanywhere.com/api/updateSelectedSentence/" +
             String(sentence.sentenceId)
         )
         .then((resp) => {

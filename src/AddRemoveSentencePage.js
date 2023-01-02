@@ -14,7 +14,7 @@ let navigate = useNavigate();
   async function getAllSentences() {
     axios
       .get(
-        "http://localhost:8000/api/getAllSentences/" + String(localStorage.getItem("objectId"))
+        "https://rajdeep345.pythonanywhere.com/api/getAllSentences/" + String(localStorage.getItem("objectId"))
       )
       .then((resp) => {
         setSentences(resp.data);
@@ -61,7 +61,7 @@ let navigate = useNavigate();
       setSelectedCount((prev) => current_count);
       axios
         .get(
-          "http://localhost:8000/api/updateSelectedSentence/" +
+          "https://rajdeep345.pythonanywhere.com/api/updateSelectedSentence/" +
             String(sentence.sentenceId)
         )
         .then((resp) => {
