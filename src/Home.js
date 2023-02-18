@@ -13,7 +13,7 @@ const Home = () => {
   }, [file])
   
   // async function handleSubmit(event){
-  //   const response = await fetch(`http://localhost:8000/api/uploadPdf/`,{
+  //   const response = await fetch(`https://rajdeep345.pythonanywhere.com/api/uploadPdf/`,{
   //     method: "POST",
   //    headers: {
   //      "Content-Type": "multipart/form-data"
