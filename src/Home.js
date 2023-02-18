@@ -31,7 +31,7 @@ const Home = () => {
   function handleSubmit(event) {
     event.preventDefault()
     axios
-      .post("http://localhost:8000/api/uploadPdf/", 
+      .post("https://rajdeep345.pythonanywhere.com/api/uploadPdf/", 
       {
         file: file,
       },
